@@ -21,7 +21,13 @@ module.exports = {
         "3/5": "60%",
       },
       colors: {
-        'custom-gray': '#333'
+        "custom-gray": "#333",
+      },
+      width: {
+        "custom-width": "300px",
+      },
+      fontSize: {
+        'custom-size': "24px"
       }
     },
   },

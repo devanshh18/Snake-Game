@@ -12,25 +12,34 @@
     />
   </head>
   <body
-    class="flex items-center justify-center h-screen font-vt323 bg-[#414141]"
+    class="flex items-center justify-center h-screen font-vt323 bg-[#414141] m-0"
   >
     <div>
-      <div class="flex justify-between">
-        <h1 class="text-[#abb788] text-[40px] font-bold my-[10px] mx-0">000</h1>
-        <h1 class="text-[#d8ddca] text-[40px] font-bold my-[10px] mx-0 hidden">
+      <div class="scores flex justify-between">
+        <h1
+          id="score"
+          class="text-[#abb788] text-[40px] font-bold my-[10px] mx-0"
+        >
+          000
+        </h1>
+        <h1
+          id="highScore"
+          class="text-[#d8ddca] text-[40px] font-bold my-[10px] mx-0 hidden"
+        >
           000
         </h1>
       </div>
       <div
-        class="border-[#595f43] border-solid border-[10px] rounded-[30px] shadow-inset-green1"
+        class="game-border-1 border-[#595f43] border-solid border-[10px] rounded-[30px] shadow-inset-green1"
       >
         <div
-          class="border-[#abb78a] border-solid border-[8px] rounded-[26px] shadow-inset-green2"
+          class="game-border-2 border-[#abb78a] border-solid border-[8px] rounded-[26px] shadow-inset-green2"
         >
           <div
-            class="bg-[#c4cfa3] border-[#8b966c] border-solid border-[30px] rounded-[20px] shadow-inset-green3"
+            class="game-border-3 bg-[#c4cfa3] border-[#8b966c] border-solid border-[30px] rounded-[20px] shadow-inset-green3"
           >
             <div
+              id="game-board"
               class="rounded-[100px] grid grid-cols-20-cols grid-rows-20-rows m-5"
             ></div>
           </div>
@@ -38,11 +47,13 @@
       </div>
     </div>
     <h1
-      class="absolute top-3/5 text-custom-gray w-[300px] text-center capitalize p-[30px] m-0"
+      id="instruction-text"
+      class="absolute top-3/5 text-custom-gray w-custom-width text-center capitalize p-[30px] m-0 z-20 text-custom-size font-bold"
     >
       Press spacebar to start the game
     </h1>
     <img
+      id="logo"
       src="./snake-game-ai-gen.png"
       alt="snake-logo"
       class="bg-[#c4cfa3] absolute"
